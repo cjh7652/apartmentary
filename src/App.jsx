@@ -5,6 +5,7 @@ import Portfolio from './page/Protfolio'
 import Service from './page/Service'
 import Journal from './page/Journal'
 import Inquiry from './page/Inquiry'
+import Detailspace from './page/Detailspace'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Routes>
             <Route  path="/" element={<Home />} />
+            <Route  path="/:id" element={<Detailspace />} />
             <Route  path="/portfolio" element={<Portfolio />} />
             <Route  path="/service" element={<Service />} />
             <Route  path="/journal" element={<Journal />} />
