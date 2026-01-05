@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 
 
 const Header = () => {
+    const [scrolled, setScrolled]=useState(false);
+
+    useEffect(()=>{
+        const handleScroll = () => {
+            if(window.scrollY > 50){
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    },[])
+
+
+
+
     return (
-        <div className="header">
+        <div className={`header ${scrolled ? 'scrolled' : ''}`}>
            <h1 className="logo"><Link to="/"><img src="/img/logo.svg" alt="logo" /></Link></h1>
            <nav>
             <ul>

@@ -6,6 +6,7 @@ import Service from './page/Service'
 import Journal from './page/Journal'
 import Inquiry from './page/Inquiry'
 import Detailspace from './page/Detailspace'
+import Footer from './components/Footer'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -25,7 +26,7 @@ function App() {
             <Route  path="/journal" element={<Journal />} />
             <Route  path="/inquiry" element={<Inquiry />} />
         </Routes>
-       
+       <Footer />
     </BrowserRouter>
     
   )
