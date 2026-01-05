@@ -31,6 +31,44 @@ const Detailspace = () => {
                     <img key={index} src={imgSrc} alt={activeSpace.name} />
                 ))}
             </div>
+            <div className="space-infos">
+                <div className="space-info-left">
+                    <h3>상세설명</h3>
+                   
+                    {
+                        detailItem.spaces.map((space, index) => (
+                            <div className="info-item" key={index}>
+                                <h4>{space.name}</h4>
+                                <p>{space.description}</p>
+                            </div>
+                        ))
+                    }
+                   
+                </div>
+                <div className="space-info-right">
+                    <h2>아파트</h2>
+                    {detailItem.title}
+                    <h2>주소</h2>
+                    {detailItem.address}
+                    <h2>평형</h2>
+                    {detailItem.type}
+                    <h2>서비스</h2>
+                    {detailItem.services}
+                    <h2>준공연도</h2>
+                    {detailItem.year}
+                    <h2>시공범위</h2>
+                    {detailItem.range}
+                    <h2>시공기간</h2>
+                    {detailItem.Construction_scope}
+                    <h2>시공시기</h2>
+                    {detailItem.Construction_period}
+                    <h2>키워드</h2>
+                    {detailItem.keyword}
+                    <h2>평당 견적</h2>
+                    {detailItem.estimate}
+                </div>
+
+            </div>
         </div>
     );
 };
