@@ -46,26 +46,46 @@ const Detailspace = () => {
                    
                 </div>
                 <div className="space-info-right">
-                    <h2>아파트</h2>
-                    {detailItem.title}
-                    <h2>주소</h2>
-                    {detailItem.address}
-                    <h2>평형</h2>
-                    {detailItem.type}
-                    <h2>서비스</h2>
-                    {detailItem.services}
-                    <h2>준공연도</h2>
-                    {detailItem.year}
-                    <h2>시공범위</h2>
-                    {detailItem.range}
-                    <h2>시공기간</h2>
-                    {detailItem.Construction_scope}
-                    <h2>시공시기</h2>
-                    {detailItem.Construction_period}
-                    <h2>키워드</h2>
-                    {detailItem.keyword}
-                    <h2>평당 견적</h2>
-                    {detailItem.estimate}
+                    <div>
+                        <h2>아파트</h2>
+                        <p>{detailItem.title}</p>
+                    </div>
+                    <div>
+                        <h2>주소</h2>
+                        <p>{detailItem.address}</p>
+                    </div>
+                    <div>
+                        <h2>평형</h2>
+                        <p>{detailItem.type}</p>
+                    </div>
+                   <div>
+                        <h2>서비스</h2>
+                        <p>{detailItem.services}</p>
+                   </div>
+                   <div>
+                        <h2>준공연도</h2>
+                        <p>{detailItem.year}</p>
+                   </div>
+                   <div>
+                        <h2>시공범위</h2>
+                        <p>{detailItem.range}</p>
+                   </div>
+                    <div>
+                        <h2>시공기간</h2>
+                        <p>{detailItem.Construction_scope}</p>
+                    </div>
+                   <div>
+                        <h2>시공시기</h2>
+                        <p>{detailItem.Construction_period}</p>
+                   </div>
+                   <div>
+                        <h2>키워드</h2>
+                        <p>{detailItem.keyword}</p>
+                   </div>
+                   <div>
+                        <h2>평당 견적</h2>
+                        <p>{detailItem.estimate}</p>
+                   </div>
                 </div>
 
             </div>
