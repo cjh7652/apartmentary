@@ -4,6 +4,7 @@ import MainSlider from '../components/MainSlider'
 import ServiceMain from '../components/ServiceMain'; 
 import { FaArrowRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Review from './../components/Review';
 import data from '../data/data';
 
 
@@ -92,6 +93,7 @@ const Home = () => {
                     </Swiper>
                 </div>
              </div>
+            <Review />
         </div>
     );
 };

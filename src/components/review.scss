@@ -1,0 +1,81 @@
+.review{
+    margin: 100px;
+
+    overflow: hidden;
+    .review_flex{
+        width: 100%;
+        display: flex;
+       /*  align-items: flex-end; */
+        flex-direction: column;
+        margin-bottom: 50px;
+        .review_banner{
+            width:100%;
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;;
+            }
+        }
+        .review_wrap{
+           
+            margin-top: 50px;
+            position: relative;
+            h2{
+                font-size: 46px;
+                margin-bottom: 80px;
+            }
+            .mySwiper3{
+                .slide_review{
+                    h2{
+                        font-size: 14px;
+                        margin-bottom: 50px;
+                    }
+                    .text{
+                        font-size: 24px;
+                        font-weight: 600;
+                         margin-bottom: 50px;
+                    }
+                    .name{
+                        font-size: 14px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+            .swiper_btn{
+                position: absolute;
+                right: 10px;
+                top: 50px;
+                display: flex;
+                gap: 20px;
+                .swiperPrevbtn{
+                    width: 14px;
+                    
+                }
+                .swiperNextbtn{
+                    width: 14px;
+                    
+                }
+            }
+            .swiper_progress_bar{
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                .slider_bar{
+                    width: 100%;
+                    height: 2px;
+                    background: #ddd;
+                    position: relative;
+                    .fill{
+                        position: absolute;
+                        width: 33.333%;
+                        background: #000;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
